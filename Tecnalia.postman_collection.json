@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "b45e2655-50bf-46eb-aba0-14037d083864",
+		"name": "Tecnalia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Evaluar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "zipfile",
+							"type": "file",
+							"src": "/Users/juangoovaerts/Downloads/solucion-semana-3-master.zip"
+						},
+						{
+							"key": "activityid",
+							"value": "554",
+							"type": "text"
+						},
+						{
+							"key": "courseid",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "component",
+							"value": "prueba",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "prueba_source",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[]",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "student_ids[]",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://tecnalia.test/api/evaluar",
+					"protocol": "http",
+					"host": [
+						"tecnalia",
+						"test"
+					],
+					"path": [
+						"api",
+						"evaluar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
